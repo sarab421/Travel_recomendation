@@ -1,0 +1,34 @@
+#home_page_full_right_side{
+    display: flex;
+    flex-direction: row;
+       margin-top:90px ;
+}
+#large_heading_home_page{
+    width: 40%;
+}
+form label{
+    color: white;
+
+}
+#submit_btn{
+    width: 100%;
+    text-align: center;
+    background-color: #017579;
+}
+form input{
+    width: 100%;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+form input::placeholder{
+    color: white;
+}
+
+form input{
+    color: white;
+}
+form{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px 25px;
+        width: 368px;
+}

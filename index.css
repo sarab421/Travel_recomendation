@@ -1,0 +1,164 @@
+/* Full Page */
+#page_width{
+    height: 100%;
+    background-image:
+            linear-gradient(to right, rgba(79, 100, 103, 0.7), transparent),
+            /* Gradient from left to right */
+            url('./images/home_page_background.jpeg');
+    background-size: cover;
+        /* Scale the image to cover the entire container */
+        background-position: center;
+   background-color: #33656B;
+}
+body,html{
+    margin: 0px;
+    height: 100%;
+}
+
+
+
+
+/* Navbar */
+#navbar_container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    background-color: #303734;
+    padding: 5px;
+}
+#logo_name_inside_nav{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#plane_img_navbar{
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+}
+#plane_img_navbar img{
+    width: 100%;
+    height: 100%;
+}
+#home_about_contact_inside_nav{
+    display: flex;
+    gap: 20px;
+
+}
+#home_about_contact_inside_nav a{
+    text-decoration: none;
+    color: white;
+}
+#search_inside_nav{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.nav_btn button{
+    background-color: #027478;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    width: 55px;
+    height: 25px;
+}
+
+#search_inside_nav{
+    background-color: white;
+    border-radius: 25px;
+    padding: 3px 6px;
+}
+#search_inside_nav input{
+    border: 0px;
+outline: 0px;
+width: 195px;
+
+}
+#search_inside_nav input::placeholder{
+   color: #027478; 
+}
+#search_btn{
+    width: 27px;
+    height: 24px;
+    overflow: hidden;
+}
+#search_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Under Navbar */
+
+.social_media_icons_home_page{
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin: 20px 2px;
+}
+.social_media_icons_home_page img{
+    width: 100%;
+    height: 100%;
+}
+#line_image_home_page {
+    width: 25px;
+    height: 146px;
+    overflow: hidden;
+    margin-bottom: 50px ;
+    margin-bottom: 140px;
+}
+#line_image_home_page img{
+    width: 100%;
+    height: 100%;
+}
+#home_page_under_nav{
+    padding: 24px 30px 15px 30px;
+}
+#book_btn{
+    background-color: #01696D;
+}
+
+#home_page_under_nav{
+display: grid;
+grid-template-columns: 15% 57% 28%;
+}
+#under_nav_left_side{
+    grid-column: 1;
+}
+#home_page_full_right_side{
+    grid-column: 2;
+}
+#result_under_search{
+    grid-column: 3;
+    margin-top: -24px;
+    display: none;
+}
+#large_heading_home_page{
+    width: 15px;
+    font-size: 85px;
+    color: white;
+}
+#qoute_home_page{
+    width: 252px;
+    color: white;
+}
+#home_page_full_right_side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#book_btn{
+    padding: 9px 20px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+}
+
+#result_under_search{
+    background-color: white;
+    border: 2px solid red;
+}
