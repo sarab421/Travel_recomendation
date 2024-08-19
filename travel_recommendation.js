@@ -62,6 +62,19 @@ function recommend() {
               console.log("With array")
                document.getElementById("result_under_search").style.display =
                  "block";
+
+
+
+                 let imgUrl = document.createElement("img");
+                 document
+                   .getElementById("result_under_search")
+                   .appendChild(imgUrl);
+                 imgUrl.src = item.imageUrl;
+                imgUrl.style.width = "310px";
+                imgUrl.style.height = "190px";
+                imgUrl.style.objectFit = "contain"; 
+
+
                let name = document.createElement("div");
                document.getElementById("result_under_search").appendChild(name);
                name.textContent = item.name;
@@ -71,16 +84,11 @@ function recommend() {
                  .getElementById("result_under_search")
                  .appendChild(descript);
                descript.textContent = item.description;
-            
 
-
-               let imgUrl = document.createElement("div");
-               document
-                 .getElementById("result_under_search")
-                 .appendChild(imgUrl);
-               imgUrl.textContent = item.imageUrl;
-             
+               let line_break= document.createElement("br");
+               document.getElementById("result_under_search").appendChild(line_break);
               
+                    
 
             })
           }
@@ -97,6 +105,14 @@ function recommend() {
             console.log(item.description);
               document.getElementById("result_under_search").style.display =
                 "block";
+              
+              let imgUrl = document.createElement("img");
+              document.getElementById("result_under_search").appendChild(imgUrl);
+              imgUrl.src = item.imageUrl;
+              imgUrl.style.width = "310px";
+              imgUrl.style.height = "190px";
+              imgUrl.style.objectFit = "contain"; 
+               
               let name = document.createElement("div");
               document.getElementById("result_under_search").appendChild(name);
               name.textContent = item.name;
@@ -106,12 +122,12 @@ function recommend() {
                 .getElementById("result_under_search")
                 .appendChild(descript);
               descript.textContent = item.description;
-
-              let imgUrl = document.createElement("div");
-              document
-                .getElementById("result_under_search")
-                .appendChild(imgUrl);
-              imgUrl.textContent = item.imageUrl;
+              
+                  let line_break = document.createElement("br");
+                  document
+                    .getElementById("result_under_search")
+                    .appendChild(line_break);
+            
         })
       }
      }
@@ -127,9 +143,12 @@ function recommend() {
 
 
 function clearall() {
-  var children = document.getElementById("result_under_search").children;
-  for(const key in children){
-    children[key].textContent=" "
+  let parentElement = document.getElementById("result_under_search");
+
+  // Loop through and remove all child elements
+  while (parentElement.firstChild) {
+    parentElement.removeChild(parentElement.firstChild);
   }
+
     document.getElementById("result_under_search").style.display="none";
 }

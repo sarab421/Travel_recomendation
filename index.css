@@ -161,4 +161,5 @@ grid-template-columns: 15% 57% 28%;
 #result_under_search{
     background-color: white;
     border: 2px solid red;
+    padding: 5px 15px;
 }
