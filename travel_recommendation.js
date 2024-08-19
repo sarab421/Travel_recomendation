@@ -143,6 +143,7 @@ function recommend() {
 
 
 function clearall() {
+  document.getElementById("search_input").value =""
   let parentElement = document.getElementById("result_under_search");
 
   // Loop through and remove all child elements
